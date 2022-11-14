@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!--- My CSS-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-products">
+            <h1 class="form-title">Checkout</h1>
+            <div class="products">
+
+                <div class="product product-01">
+                    <h3 class="product-title">Product 1</h3>
+                    <span class="price">$230</span>
+                </div>
+                <p class="product-datail">Lorem Ipsum is not simply random text</p>
+
+                <div class="product product-02">
+                    <h3 class="product-title">Product 2</h3>
+                    <span class="price">$120</span>
+                </div>
+                <p class="product-datail">Lorem Ipsum is not simply random text</p>
+            </div>
+            <div class="box-total">
+                <h3 class="total">Total</h3>
+                <span class="price-total">$320</span>
+            </div>
+        </form>
+        <!--form credit-->
+        <form class="form-credit">
+
+            <h4 class="credit-title"> Credit Card Details</h4>
+            <div class="box-info-01">
+                <div class="card-holder">
+                    <label for="holder" class="label-holder">CARD HOLDER</label>
+                    <input class="holder" placeholder="Card Holder" type="text">
+                </div>
+
+                <div class="expiration-date">
+                    <label for="date-expiration" class="label-date">EXPIRATION DATE</label>
+                    <input class="date-expiration" type="date">
+                </div>
+            </div>
+            <div class="box-info-02">
+                <div class="card-numbers">
+                    <label for="number" class="label-card">CARD NUMBER</label>
+                    <input class="card-number" placeholder="Card Number" type="number">
+                </div>
+
+                <div class="card-cvc">
+                    <label for="cvc-code" class="label-cvc">CVC</label>
+                    <input class="cvc-code" placeholder="CVC" type="number">
+                </div>
+            </div>
+
+            <div class="proceed">
+                <button class="btn-proceed" onclick="proceeed()" type="button">Proceed</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
